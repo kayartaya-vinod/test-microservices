@@ -1,5 +1,8 @@
 node {
-	stage('Test') {
-		sh echo 'Hello'
+	stage('Git checkout') {
+		git 'https://github.com/kayartaya-vinod/test-microservices'
 	}	
+	stage('Compile and package') {
+		sh 'mvn package'
+	}
 }
