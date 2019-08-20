@@ -6,4 +6,9 @@ node {
 		def mvnHome = tool name: 'maven-352', type: 'maven'
 		sh "${mvnHome}/bin/mvn install"
 	}
+	stage('Deliver') {
+		steps {
+			sh './jenkins/scripts/deliver.sh'
+		}
+	}
 }
