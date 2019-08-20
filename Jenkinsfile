@@ -4,6 +4,6 @@ node {
 	}	
 	stage('Compile and package') {
 		def mvnHome = tool name: 'maven-352', type: 'maven'
-		sh "${mvnHome}/bin/mvn package"
+		sh "${mvnHome}/bin/mvn install"
 	}
 }
