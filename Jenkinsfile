@@ -3,7 +3,7 @@ node {
 		git 'https://github.com/kayartaya-vinod/test-microservices'
 	}	
 	stage('Compile and package') {
-		def mvnHome = tool name: 'maven-361', type: 'maven'
+		def mvnHome = tool name: 'maven-352', type: 'maven'
 		sh "${mvnHome}/bin/mvn package"
 	}
 }
