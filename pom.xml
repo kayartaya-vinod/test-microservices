@@ -62,7 +62,7 @@
 							<goal>prepare-agent</goal>
 						</goals>
 					</execution>
-					<!-- attached to Maven test phase -->
+					<!-- attached to Maven install phase -->
 					<execution>
 						<id>report</id>
 						<phase>install</phase>
